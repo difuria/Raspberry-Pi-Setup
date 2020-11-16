@@ -29,6 +29,8 @@ source ~/.bashrc
 # Python bits
 echo "Installing and updating Python packages"
 pip install --upgrade pip
+pip install pymongo
+pip install dnspython
 
 # Update background
 cd ~
