@@ -4,6 +4,8 @@
 echo "Update Raspberry pi OS"
 sudo apt update
 echo y | sudo apt full-upgrade
+# Remove any redundant packages
+echo y | sudo apt autoremove
 
 # Linux tools
 echo "Installing Linux Tools"
