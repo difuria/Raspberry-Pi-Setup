@@ -3,9 +3,9 @@
 # Ensure raspberry pi is fully up to date
 echo "Update Raspberry pi OS"
 sudo apt update
-echo y | sudo apt full-upgrade
+sudo apt full-upgrade -y
 # Remove any redundant packages
-echo y | sudo apt autoremove
+sudo apt autoremove -y
 
 # Linux tools
 echo "Installing Linux Tools"
@@ -25,8 +25,6 @@ fi
 
 # Resource bash files
 source ~/.bashrc
-
-# Add something to download image and change background
 
 # Python bits
 echo "Installing and updating Python packages"
