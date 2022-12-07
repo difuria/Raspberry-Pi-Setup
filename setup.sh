@@ -9,6 +9,7 @@ sudo apt autoremove -y
 
 # Linux tools
 echo "Installing Linux Tools"
+sudo apt-get install vim
 sudo apt-get install ack-grep
 sudo apt-get install locate
 
