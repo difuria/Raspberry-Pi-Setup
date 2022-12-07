@@ -9,9 +9,10 @@ sudo apt autoremove -y
 
 # Linux tools
 echo "Installing Linux Tools"
-sudo apt-get install vim
 sudo apt-get install ack-grep
 sudo apt-get install locate
+sudo apt-get install vim
+sudo apt-get install zsh
 
 # If the python version installed is less than 3 set up an alias for it
 python_version=`echo "import sys
