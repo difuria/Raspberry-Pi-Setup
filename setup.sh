@@ -13,6 +13,7 @@ sudo apt-get install ack-grep
 sudo apt-get install locate
 sudo apt-get install vim
 sudo apt-get install zsh
+sudo apt-get install realvnc-vnc-server
 
 # If the python version installed is less than 3 set up an alias for it
 python_version=`echo "import sys
