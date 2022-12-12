@@ -9,11 +9,11 @@ sudo apt autoremove -y
 
 # Linux tools
 echo "Installing Linux Tools"
-sudo apt-get install ack-grep
-sudo apt-get install locate
-sudo apt-get install vim
-sudo apt-get install zsh
-sudo apt-get install realvnc-vnc-server
+sudo apt-get install ack-grep -y
+sudo apt-get install locate -y
+sudo apt-get install vim -y
+sudo apt-get install zsh -y
+sudo apt-get install realvnc-vnc-server -y
 
 # If the python version installed is less than 3 set up an alias for it
 python_version=`echo "import sys
@@ -42,7 +42,9 @@ background_image='Sorrento [2019] - 10.jpg'
 mv "$background_image" Pictures/
 pcmanfm --set-wallpaper `pwd`/Pictues/"$background_image"
 
+sudo updatedb
+
 # Reboot
 echo "Rebooting system to ensure changes have taken effect"
-sleep(5)
+sleep 5
 sudo reboot
