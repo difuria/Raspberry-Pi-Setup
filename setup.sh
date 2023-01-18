@@ -34,6 +34,7 @@ echo "Installing and updating Python packages"
 pip install --upgrade pip
 pip install pymongo
 pip install dnspython
+pip install pipenv
 
 # Update background
 cd ~
