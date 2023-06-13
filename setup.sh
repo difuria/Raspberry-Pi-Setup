@@ -43,6 +43,9 @@ background_image='Sorrento [2019] - 10.jpg'
 mv "$background_image" Pictures/
 pcmanfm --set-wallpaper `pwd`/Pictues/"$background_image"
 
+# HEIC isn't viewable with the current packages
+sudo apt install heif-gdk-pixbuf
+
 sudo updatedb
 
 # Reboot
