@@ -39,6 +39,9 @@ sudo apt install heif-gdk-pixbuf
 
 sudo updatedb
 
+# Alter Shell
+sudo sed -i 's\/bin/bash\/bin/zsh\g' /etc/passwd
+
 # Reboot
 echo "Rebooting system to ensure changes have taken effect"
 sleep 5
